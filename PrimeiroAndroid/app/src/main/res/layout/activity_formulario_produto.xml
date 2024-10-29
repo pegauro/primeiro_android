@@ -34,7 +34,7 @@
         android:id="@+id/valor"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Nome"
+        android:hint="Valor"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="@id/desc"
         app:layout_constraintStart_toStartOf="@id/desc"
