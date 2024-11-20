@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import br.cti.primeiroandroid.R
 import br.cti.primeiroandroid.model.Produto
 import br.cti.primeiroandroid.ui.recycleview.adapter.ListaProdutosAdapter
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import java.math.BigDecimal
 
 class MainActivity : AppCompatActivity(){
@@ -31,5 +32,11 @@ class MainActivity : AppCompatActivity(){
                 valor = BigDecimal("19,99")
             )
         ))
+
+        val fab = findViewById<FloatingActionButton>(R.id.floatingActionButton)
+        fab.setOnClickListener{
+            val intent = Intent(this, FormularioProdutoActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
